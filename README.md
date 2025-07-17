@@ -1,6 +1,7 @@
 # SCARA Yocto Image
 
 ## 🔽 Download
+[**SCARA Firmware v1.1 (ZIP)**](https://github.com/HTT04062003/yo/releases/download/v1.1/SCARA_FIRMWARE.zip)
 
 [SCARA Yocto Image v1.0 (ZIP)](https://github.com/HTT04062003/yo/releases/download/v1.0/core-image-scara-raspberrypi4.zip)
 
