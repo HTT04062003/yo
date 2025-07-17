@@ -5,6 +5,7 @@
 
 [SCARA Yocto Image v1.0 (ZIP)](https://github.com/HTT04062003/yo/releases/download/v1.0/core-image-scara-raspberrypi4.zip)
 
+[**TAP_BAN_VE_DIEN v1.1 (ZIP)**](https://github.com/HTT04062003/yo/releases/download/v1.2/TAP_BAN_VE_DIEN.pdf)
 ## 💡 Hướng dẫn sử dụng
 
 1. Tải về file `.zip` và giải nén ra `.img`
