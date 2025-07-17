@@ -1,0 +1,2 @@
+ Yocto image for SCARA on Raspberry Pi 4
+
