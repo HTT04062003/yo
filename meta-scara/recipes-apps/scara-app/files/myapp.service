@@ -1,0 +1,12 @@
+[Unit]
+Description=Start SCARA GUI and Communication
+After=network.target
+
+[Service]
+ExecStart=/usr/share/scara-app/run.sh
+Restart=always
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
