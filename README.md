@@ -22,7 +22,6 @@ Dự án này xây dựng một hệ thống điều khiển robot SCARA bao g�
   - Recipe `scara-app.bb` cài đặt binary và script khởi động.  
   - Tạo ra file image `.img` để flash trực tiếp vào Raspberry Pi.  
 
----
 ## 🛠️ Hướng dẫn build
 
 ### 1. Build firmware STM32
