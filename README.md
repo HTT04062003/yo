@@ -5,41 +5,6 @@ Dự án này xây dựng một hệ thống điều khiển robot SCARA bao g�
 - **Raspberry Pi Application**: giao diện GUI (Python Tkinter) để điều khiển robot và giám sát trạng thái.  
 - **Yocto Project Layer**: tích hợp ứng dụng vào hệ điều hành nhúng (core-image-scara) chạy trên Raspberry Pi.  
 ---
-## 📂 Cấu trúc dự án
-  scara-robot-project/
-  
-  │
-  ├── stm32-firmware/     
-  │   ├── Core/    
-  │   ├── Drivers/     
-  │   ├── Inc/      
-  │   ├── Src/            
-  │   ├── Makefile / .project      
-  │   └── README.md             
-  │
-  ├── rpi-app/                       # Code chạy trên Raspberry Pi
-  │   ├── app/                       # Python GUI (Tkinter)
-  │   │   ├── mainapp.py
-  │   │   ├── gui/                   # Các màn hình GUI con
-  │   │   └── utils/                 # Hàm tiện ích
-  │   │
-  │   ├── Comunication/              # Code C giao tiếp với STM32
-  │   │   ├── comunication_process.c
-  │   │   ├── uart.c / can.c / socket.c / shm.c
-  │   │   └── Makefile
-  │   │
-  │   ├── run.sh                     # Script khởi động app
-  │   └── README.md                  # Hướng dẫn build & chạy trên RPi
-  │
-  ├── meta-scara/                    # Custom Yocto Layer
-  │   ├── recipes-apps/
-  │   │   └── scara-app/
-  │   │       ├── files/
-  │   │       │   ├── run.sh
-  │   │       │   └── scara.service
-  │   │       └── scara-app.bb       # Recipe build app vào Yocto
-  │   └── README.md                  # Hướng dẫn tích hợp layer
-  ---
 ## 🚀 Tính năng
 - **STM32**  
   - Điều khiển AC Servo bằng xung STEP/DIR.  
@@ -58,6 +23,21 @@ Dự án này xây dựng một hệ thống điều khiển robot SCARA bao g�
   - Tạo ra file image `.img` để flash trực tiếp vào Raspberry Pi.  
 
 ---
+## 🛠️ Hướng dẫn build
+
+### 1. Build firmware STM32
+- Mở `stm32-firmware/` bằng STM32CubeIDE hoặc Keil.  
+- Build và flash xuống STM32F407.  
+
+### 2. Build image Yocto cho Raspberry Pi
+```bash
+# Clone repo
+git clone https://github.com/HTT04062003/yo/scara-robot-project.git
+cd scara-robot-project/yocto
+
+# Source môi trường Yocto
+source poky/oe-init-build-env build
+
 # SCARA Yocto Image
 
 ## 🔽 Download
