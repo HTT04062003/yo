@@ -38,7 +38,7 @@ cd scara-robot-project/yocto
 # Source môi trường Yocto
 source poky/oe-init-build-env build
 
----
+
 # SCARA Yocto Image
 
 ## 🔽 Download
