@@ -7,6 +7,7 @@ Dự án này xây dựng một hệ thống điều khiển robot SCARA bao g�
 ---
 ## 📂 Cấu trúc dự án
   scara-robot-project/
+  
   │
   ├── stm32-firmware/     
   │   ├── Core/    
