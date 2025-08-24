@@ -10,13 +10,11 @@ Dự án này xây dựng một hệ thống điều khiển robot SCARA bao g�
 ## 🚀 Tính năng
 - **STM32**  
   - Điều khiển AC Servo bằng xung STEP/DIR.  
-  - Nội suy tuyến tính, cung tròn với profile vận tốc Trapezoidal & S-curve.  
-  - PID điều khiển động cơ & nhiệt độ (hotend).  
   - Giao tiếp CAN & UART với Raspberry Pi.  
 
 - **Raspberry Pi**  
   - GUI trực quan viết bằng Python Tkinter.  
-  - Chương trình C trung gian: nhận lệnh từ GUI, gửi/nhận dữ liệu từ STM32 qua CAN/UART, chia sẻ bằng socket & shared memory.  
+  - Chương trình C trung gian: nhận lệnh từ GUI, gửi/nhận dữ liệu từ STM32 qua CAN/UART, chia sẻ bằng socket & shared memory. Nội suy tuyến tính, cung tròn với profile vận tốc Trapezoidal & S-curve.    
   - Tự động khởi động khi bật nguồn (systemd service).  
 
 - **Yocto Project**  
